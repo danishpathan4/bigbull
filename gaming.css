@@ -1,0 +1,548 @@
+      :root {
+        --primary-color: rgba(26, 188, 156, 1);
+      }
+      #login-screen {
+        height: 100vh;
+      }
+      #login-screen:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 60%;
+        background-color: var(--primary-color);
+        z-index: -1;
+      }
+      .login-form {
+        width: 60%;
+        height: 60vh;
+        box-shadow: 0 0 50px #333;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        display: flex;
+      }
+      .login-form .left-part {
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .login-form .right-part {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+
+      @media screen and (max-width: 600px) {
+        #login-screen:after {
+          top: 0;
+          bottom: 60%;
+          left: 0;
+          right: 0;
+        }
+        .login-form {
+          flex-direction: column;
+        }
+        .login-form .left-part {
+          width: auto;
+          height: 33.33%;
+        }
+      }
+        .title{
+          font-size: 35px;
+          color: #fb0;
+          color: black;
+          align-items: center;
+          text-align: center;
+       }
+       .title2{
+          padding-top: 10px;
+          font-size: 16px;
+          word-spacing: 1px;
+        }
+        .forgetpass{
+          margin-left: 340px;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+
+
+
+
+
+
+
+
+        *{
+      padding: 0px;
+      margin: 0px;
+    }
+    body{
+      background-color: background-color: #d3d3d31c;
+    }
+    .main{
+      width: 100%;
+      height: 100vh;
+    }
+    .header{
+      width: 98%;
+      height: 17vh;
+      margin: auto;
+      position: relative;
+      top: 15px;
+      background-color: rgba(26, 188, 156, 1);
+    }
+    .balance{
+      width: 250px;
+      position: relative;
+      top: 30px;
+      left: 20px;
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+    }
+    .btn11{
+      margin-top: 8px;
+      background: #2196f3!important;
+            color: #fff!important;
+            border: none;
+            position: relative;
+            bottom: -5px;
+            padding: 5px 10px 5px 10px;
+            font-size: 15px;
+            border-radius: 5px;
+    }
+    .btn-primary{
+           background: #2196f3!important;
+           color: #fff!important;
+           border: none;
+           margin-top: 8px;
+        }
+        .btn-primary1{
+           background: #f5f5f5!important;
+           border: none;
+           margin-top: 8px;
+           margin-left: 5px;
+        }
+        .fa-refresh{
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+          color: #fff!important;
+          font-size: 20px;
+        }
+        .main1{
+          width: 100%;
+          height: 10vh;
+          /*border: 2px solid black;*/
+          position: relative;
+          top: 20px;
+          display: flex;
+        }
+        .main1r1{
+          width: 50%;
+          position: absolute;
+          text-align: center;
+          color: gray;
+          bottom: 0px;
+        }
+        .main1r1 a{
+          text-decoration: none;
+          color: gray;
+        }
+        .main1r2{
+          width: 50%;
+          position: absolute;
+          left: 50%;
+          text-align: center;
+          color: gray;
+          bottom: 0px;
+        }
+        .main1r2 a{
+          text-decoration: none;
+          color: gray;
+        }
+        .main2r1{
+          position: relative;
+          top: 50px;
+          color: gray;
+          font-size: 14px;
+          display: flex;
+        }
+        .fa-trophy{
+          font-size: 25px;
+          color: gray;
+          margin-left: 20px;
+        }
+        .main2r1 span{
+          position: absolute;
+          top: 30px;
+          left: 20px;
+          font-size: 22px;
+          color: black;
+          letter-spacing: 1px;
+        }
+        .countdown{
+          position: absolute;
+          right: 20px;
+          font-size: 15px;
+        }
+        .betbuttons{
+          position: absolute;
+          top: 300px;
+          width: 100%;
+          height: 10vh;
+          /*border: 2px solid red;*/
+          flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        .btn-success{
+          position: absolute;
+          left: 15px;
+        }
+        .btn-secondary{
+          position: absolute;
+          right: 47.4%;
+          background-color: purple;
+        }
+        .btn-danger{
+          position: absolute;
+          right: 15px;
+        }
+        .selectnumber{
+          width: 100%;
+        position: relative;
+        top: 170px;
+        /*border: 2px solid red;*/
+        /*display: flex;*/
+        }
+        .btn-primary{
+          width: 190px;
+          margin-left: 40px;
+          margin-right: 10px;
+        }
+        .bconetrophy{
+          position: relative;
+          font-size: 16px;
+          text-align: center;
+          top: 200px;
+          border-bottom: 2px solid #009587;
+          padding-bottom: 10px;
+        }
+        .backgroundcolor{
+          height: 75vh;
+          background-color: #d3d3d31c;
+        }
+        .rowtable{
+          position: relative;
+          top: 100px;
+          width: 100%;
+          flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .row1{
+          width: 100%;
+          /*text-align: center;*/
+          color: gray;
+          border-bottom: 1px solid gray;
+          display: flex;
+        }
+        .colom1{
+          width: 100%;
+          padding-bottom: 10px;
+          border-bottom: 1px solid gray;
+          color: gray;
+          padding-left: 140px;
+        }
+        .row2{
+          /*display: flex;*/
+          border-bottom: 1px solid gray;
+          padding-left: 112px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+
+
+
+        .rowtable2{
+          position: relative;
+          top: 100px;
+          width: 100%;
+          flex-direction: column;
+            display: flex;
+        }
+        .row2{
+          width: 100%;
+          /*text-align: center;*/
+          color: gray;
+          border-bottom: 1px solid gray;
+          display: flex;
+        }
+        .colom2{
+          padding-left: 110px;
+          width: 100%;
+          padding-bottom: 10px;
+          border-bottom: 1px solid gray;
+          color: gray;
+          padding-left: 135px;
+        }
+        .row3{
+          /*display: flex;*/
+          border-bottom: 1px solid gray;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 130px;
+        }
+
+        .rowtable3{
+          position: relative;
+          top: 100px;
+          width: 100%;
+          flex-direction: column;
+            display: flex;
+        }
+        .colom3{
+          width: 100%;
+          padding-bottom: 10px;
+          border-bottom: 1px solid gray;
+          color: gray;
+          padding-left: 126px;
+        }
+        .row4{
+          /*display: flex;*/
+          padding-left: 20px;
+          border-bottom: 1px solid gray;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 150px;
+        }
+
+        .rowtable4{
+          position: relative;
+          top: 100px;
+          width: 100%;
+          flex-direction: column;
+            display: flex;
+        }
+        .colom4{
+          width: 100%;
+          padding-bottom: 10px;
+          border-bottom: 1px solid gray;
+          color: gray;
+          padding-left: 133px;
+        }
+        .row5{
+          /*display: flex;*/
+          padding-left: 20px;
+          border-bottom: 1px solid gray;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 160px;
+        }
+        .circle1{
+          margin-left: -10px;
+          width: 15px;
+          height: 15px;
+          border-radius: 50px;
+          background-color: green;
+          margin-top: 9px;
+        }
+        .circle{
+          margin-left: -10px;
+          width: 15px;
+          height: 15px;
+          border-radius: 50px;
+          background-color: red;
+          margin-top: 9px;
+        }
+        .sticky{
+          width: 100%;
+          position: relative;
+          font-size: 16px;
+          text-align: center;
+          top: 120px;
+          border-bottom: 2px solid #009587;
+          padding-bottom: 10px;
+        }
+        .fa-sticky-note-o{
+          margin-left: 29px;
+          font-size: 20px;
+          padding-bottom: 10px;
+        }
+        .nodata{
+          height: 50px;
+          border-bottom: 1px solid lightgray;
+          position: relative;
+          top: 130px;
+          text-align: center;
+          color: gray;
+          font-size: 13px;
+        }
+        .background{
+          position: relative;
+          top: 145px;
+          height: 30px;
+          background-color: #d3d3d31c;
+        }
+        .d-grid a{
+          text-decoration: none;
+          color: #f5f5f5;
+        }
+        .color a{
+          text-decoration: none;
+          color: #f5f5f5;
+        }
+        .color{
+          width: 80px;
+          position: absolute;
+          right: 10px;
+          top: 20px;;
+          z-index: 1;
+        }
+        .recharge-main{
+          width: 100%;
+          /* border: 2px solid black; */
+        }
+        .recharge-heading{
+          height: 10vh;
+          width: 100%;
+          background-color: rgba(26, 188, 156, 1);
+          font-weight: 500;
+          color: #f5f5f5;
+          letter-spacing: 1px;
+          padding-left: 20px;
+          font-size: 20px;
+          padding-top: 18px;
+          font-family: "Times New Roman", Times, serif;
+        }
+        .recharge-heading i{
+          color: #f5f5f5;
+          font-size: 20px;
+          padding-right: 20px;
+          font-weight: bolder;
+        }
+        .manu i{
+          position: absolute;
+          right: 15px;
+          top: 25px;
+          width: 20px;
+          font-size: 20px;
+        }
+        .recharge-money{
+          font-size: 24px;
+          font-weight: 400;
+          padding: 15px;
+          box-sizing: border-box;
+          text-align: center;
+        }
+        .amount-text{
+          width: 95%;
+          height: 48px;
+          border-radius: 4px;
+          box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+          transition: background .3s cubic-bezier(.25,.8,.5,1);
+          padding: 0 25px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-left: 35px;
+        }
+        .amount-text img{
+          width: 22px;
+          height: 22px;
+          margin-right: 5px;
+        }
+        .amount-text input{
+          width: 90%;
+          font-size: 14px;
+          border: none;
+        }
+        .select-amount{
+          width: 100%;
+          padding: 25px 10% 15px;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+        .first-amount{
+          width: 28%;
+          margin: 5px 5px;
+          padding: 10px 0;
+          box-sizing: border-box;
+          text-align: center;
+          font-size: 14px;
+          box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+          transition: .3s cubic-bezier(.25,.8,.5,1),color 1ms;
+          background: #f5f5f5;
+          border: 0;
+        }
+        .payment-box{
+          width: 100%;
+          padding-left: 4%;
+          box-sizing: border-box;
+        }
+        .payment-text{
+          height: 48px;
+          line-height: 48px;
+          font-size: 14px;
+          color: gray;
+        }
+        .radiabutton{
+          height: 48px;
+          margin-top: 20px;
+          line-height: 48px;
+          font-size: 15px;
+          margin-left: 60px;
+          color: gray;
+        }
+        .recharge-btn{
+          width: 100%;
+          padding: 7% 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 12px 0 24px;
+        }
+        .button-design{
+          background: #009688;
+          color: #fff;
+          font-size: 14px;
+          border-radius: 2px;
+          border: 0;
+          padding: 14px 0;
+          text-align: center;
+          width: 52%;
+        }
+        .time{
+          display: inline-flex;
+        }
+        .time-sub{
+          margin: 0 2px;
+          padding: 0 4px;
+          font-size: 24px;
+          background: #f2f2f2;
+          color: #0f1223;
+          border-radius: 5px;
+        }
+        .time-sub-dot{
+          padding: 0 3px;
+          font-size: 26px;
+          line-height: 26px;
+        }
